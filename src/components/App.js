@@ -21,20 +21,39 @@ const App = (props) => {
           </div>
           <div className="row">
             <div className="col-sm-6">
-              <BreakLable />
+              <div className="row">
+                <div className="col-sm-12">
+                  <BreakLable />
+                </div>
+              </div>
+              <div className="row">  
+                <div className="col-sm-12">
+                  <ConnectedBreakControl />
+                </div>
+              </div>
             </div>
             <div className="col-sm-6">
-              <SessionLable />
+              <div className="row">
+                <div className="col-sm-12">
+                  <SessionLable />
+                </div>
+              </div>
+              <div className="row">  
+                <div className="col-sm-12">
+                  <ConnectedSessionControl />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="row">
+          
+          {/* <div className="row">
             <div className="col-sm-6">
               <ConnectedBreakControl />
             </div>
             <div className="col-sm-6">
               <ConnectedSessionControl />
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col-sm-12">
               <ConnectedTimer />
